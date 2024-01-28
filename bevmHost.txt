@@ -1,0 +1,7 @@
+sudo systemctl stop bevm
+sudo nano /etc/systemd/system/bevm.service #BEVMWALLETADDRESS sudo systemctl daemon-reload
+sudo systemctl enable bevm
+sudo systemctl restart bevm
+sudo journalctl -u bevm -f --no-hostname -o cat
+
+ExecStart=/path/to/your/node/executable --name "#BEVMWALLETADDRESS"
