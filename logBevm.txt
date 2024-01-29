@@ -1,0 +1,1 @@
+sudo journalctl -u bevm -f --no-hostname -o cat
